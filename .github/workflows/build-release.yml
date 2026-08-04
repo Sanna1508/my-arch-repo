@@ -82,6 +82,9 @@ jobs:
           sed -i 's/^PACKAGECARCH=/#PACKAGECARCH=/g' /etc/makepkg.conf
 
       - name: Configure pacman options and custom repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+
         run: |
           set -euo pipefail
           tmp=$(mktemp)
@@ -94,12 +97,14 @@ jobs:
           cat "$tmp" > /etc/pacman.conf
           rm -f "$tmp"
 
-          cat <<EOF >> /etc/pacman.conf
-
-          [nanoka]
-          SigLevel = Optional TrustAll
-          Server = https://github.com/${{ github.repository }}/releases/download/$RELEASE_TAG
-          EOF
+          if gh release view "$RELEASE_TAG" --repo "${{ github.repository }}" --json assets -q '.assets[].name' | grep -qx "${REPO_DB_NAME}.db"; then
+          {
+            echo ""
+            echo [nanoka]
+            echo SigLevel = Optional TrustAll
+            echo "Server = https://github.com/${{ github.repository }}/releases/download/$RELEASE_TAG"
+          } >> /etc/pacman.conf
+          fi
           pacman -Sy
 
       - name: Checkout repository
