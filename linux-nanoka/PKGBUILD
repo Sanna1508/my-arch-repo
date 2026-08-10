@@ -175,7 +175,7 @@ fi
 
 pkgbase="linux-nanoka"
 _major=7.1
-_minor=6
+_minor=8
 #_minorc=$((_minor+1))
 #_rcver=rc8
 pkgver=${_major}.${_minor}
@@ -820,7 +820,7 @@ for _p in "${pkgname[@]}"; do
     }"
 done
 
-b2sums=('d1a694cb55a5bf013987022b7d87d8430142f26686d52eaa33928685ec9116dd238dd6fa33eb91364e68bc33ca120ce82db35c1dc247d68f5556111aeff11537'
+b2sums=('6a198c07f5b3ff24e35972c0c25a30f4ec72ec4b986a926ec57aa3fa045bd72dc15845a3651b134715a1cd5efb62a1bb8800a19dc80cef2e0de70d01245e5eb0'
         'SKIP'
         'e8beca99af880f0eb8c6d40a73b51ad9ce29022ae398073e2a9d7a0efdb501d584a5e38d4e0568195b45c3181178ab826c9d397501c312b80d64adeebb90bd65'
         'c992567bd7dd8553432be496ffa1c17e2f5ebe9c7edb51945cf977e1b742dd6517c210d8843bb82744ca705efd07f8027cd7dde41b50215ebd707a34aa81462e'
