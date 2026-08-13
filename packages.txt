@@ -21,6 +21,7 @@ networkmanager-iwd
 nmtui-go
 nvidia-utils
 obs-pipewire-audio-capture
+oh-my-pi
 onlyoffice
 osu-lazer-bin
 osu-mime
