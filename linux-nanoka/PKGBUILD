@@ -174,8 +174,8 @@ else
 fi
 
 pkgbase="linux-nanoka"
-_major=7.1
-_minor=8
+_major=7.2
+_minor=0
 #_minorc=$((_minor+1))
 #_rcver=rc8
 pkgver=${_major}.${_minor}
@@ -244,14 +244,14 @@ fi
 # ZFS support
 if [ "$_build_zfs" = "yes" ]; then
     makedepends+=(git)
-    source+=("git+https://github.com/cachyos/zfs.git#commit=c681af76c5a6a15caada25eb13090e41218c7831")
+    source+=("git+https://github.com/cachyos/zfs.git#commit=92163c55454ad016a4f5be0baca98f95229227df")
 fi
 
 
 if [ "$_build_nvidia_open" = "yes" ]; then
     source+=("https://download.nvidia.com/XFree86/${_nv_open_pkg%"-$_nv_ver"}/${_nv_open_pkg}.tar.xz"
              "${_patchsource}/misc/nvidia/0002-fix-dsc-correct-RC-parameter-tables-to-match-VESA-DS.patch"
-             "${_patchsource}/misc/nvidia/0004-fix-dp-add-Bigscreen-Beyond-VR-headset-to-WAR-databa.patch")
+             "${_patchsource}/misc/nvidia/0003-fix-dp-add-Bigscreen-Beyond-VR-headset-to-WAR-databa.patch")
 fi
 
 # Use generated AutoFDO Profile
@@ -820,11 +820,11 @@ for _p in "${pkgname[@]}"; do
     }"
 done
 
-b2sums=('6a198c07f5b3ff24e35972c0c25a30f4ec72ec4b986a926ec57aa3fa045bd72dc15845a3651b134715a1cd5efb62a1bb8800a19dc80cef2e0de70d01245e5eb0'
+b2sums=('31474ec81ba911c6c65646695b052b77032742973a3b4d61a212c07431a7d3e952ade31f2864ffcba133d8b2a2d0359bb048ae7154147b9272689e7b4485cb36'
         'SKIP'
-        'e8beca99af880f0eb8c6d40a73b51ad9ce29022ae398073e2a9d7a0efdb501d584a5e38d4e0568195b45c3181178ab826c9d397501c312b80d64adeebb90bd65'
+        'c7d7d02582c853cfa9cf651c22788bee023b75a3f45c8c615410a303a1746c93982b8d4b8941eb0ab1dd7d704e1ab26380cade9a6eef1aa7e0f30112f08ef3a9'
         'c992567bd7dd8553432be496ffa1c17e2f5ebe9c7edb51945cf977e1b742dd6517c210d8843bb82744ca705efd07f8027cd7dde41b50215ebd707a34aa81462e'
-        '3335d2d4588fb5613c0a2dc3b0b1e89e0b6cc7ee8b65ea9808681d1b96199107ad5eb1a3611288ed4599a40bd7e6094604cb2136416eaa13f8640d50a69ce808'
+        '5d7e3c8d70ad36074858a541d37378308a0b4859cc5931a869ae701c263cd74265899390873110218f114baa939bfde3349c6b8c47a2155f7cca0dd9ac43a62c'
         '59bd5799cb37bdd264a683bb170efd81d3c57381d8ffa5f4cdb0e6c556f61b4485c88b3ec6513cf4e57c975d9ff9c07111463a5b50a213a6178f0530cf40dcd7'
         'f119d6eb87e5ead55845536a7a96732fffa9ab9a537e66994e0fdee303eb64b2cb445277794e4419b2281d2d7eafc40a72be395ce3239ce7316f89e27cb5f88c'
         '870fcd01ea0b3a2bc11fe43b2333f30add0067e5f77ee820f771f8e95a0b4e9ba2f7d822e5337d0c51f4a34c843f76b2148c853614e68a024393073fff7d99da'
