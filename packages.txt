@@ -46,6 +46,7 @@ wezterm-git
 xclicker
 xmousepasteblock
 zalo-for-linux-bin
+zedless-git
 
 #####
 # Xlibre packages
