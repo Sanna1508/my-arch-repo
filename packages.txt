@@ -7,11 +7,11 @@ catppuccin-obs-theme-git
 catppuccin-whiskers-bin
 fcitx5-lotus-git
 localsend
-onlyoffice
 pacman
 paru
 pwvucontrol
-rustdesk
 teamviewer
 ventoy
 somewm-git
+waydroid-helper
+equicord-openasar
