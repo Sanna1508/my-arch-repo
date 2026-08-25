@@ -14,3 +14,4 @@ pwvucontrol
 rustdesk
 teamviewer
 ventoy
+somewm-git
