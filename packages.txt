@@ -13,4 +13,4 @@ pwvucontrol
 teamviewer
 waydroid-helper
 somewm-git
-equicord-openasar
+equicord-installer-bin
