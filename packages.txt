@@ -12,5 +12,3 @@ paru
 pwvucontrol
 teamviewer
 waydroid-helper
-equicord-openasar
-
