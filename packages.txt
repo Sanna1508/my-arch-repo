@@ -13,3 +13,4 @@ paru
 pwvucontrol
 teamviewer
 waydroid-helper
+somewm-git
