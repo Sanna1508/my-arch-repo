@@ -11,6 +11,5 @@ pacman
 paru
 pwvucontrol
 teamviewer
-ventoy
 waydroid-helper
 equicord-openasar
