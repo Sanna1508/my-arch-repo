@@ -6,7 +6,6 @@ catppuccin-fcitx5-git
 catppuccin-obs-theme-git
 catppuccin-whiskers-bin
 fcitx5-lotus-git
-equicord-openasar
 localsend
 pacman
 paru
