@@ -12,6 +12,5 @@ paru
 pwvucontrol
 teamviewer
 ventoy
-somewm-git
 waydroid-helper
 equicord-openasar
