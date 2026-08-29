@@ -1,0 +1,63 @@
+# Maintainer: Sanna1508 <you@example.com>
+# Contributor: Om Chillure <omchillure4@gmail.com>
+
+pkgname=keypop
+pkgver=0.2.1
+pkgrel=1
+pkgdesc="High-performance transparent keyboard input visualizer for Linux screencasts and demos (X11/Wayland)"
+arch=('x86_64' 'aarch64')
+url="https://github.com/Sanna1508/keypop"
+license=('MIT')
+depends=(
+  'gcc-libs'
+  'libxcb'
+  'libxkbcommon'
+  'openssl'
+  'wayland'
+  'vulkan-icd-loader'
+  'libgl'
+)
+makedepends=(
+  'cargo'
+  'rust'
+  'pkgconf'
+  'clang'
+  'libxcb'
+  'libxkbcommon'
+  'wayland'
+  'openssl'
+)
+optdepends=(
+  'vulkan-radeon: Vulkan driver for AMD GPUs'
+  'vulkan-intel: Vulkan driver for Intel GPUs'
+  'vulkan-nouveau: Vulkan driver for NVIDIA GPUs'
+  'mesa: software Vulkan (lavapipe) fallback'
+)
+source=("${pkgname}::git+https://github.com/Sanna1508/keypop.git#branch=main")
+sha256sums=('SKIP')
+
+prepare() {
+  cd "${srcdir}/${pkgname}"
+  cargo fetch --locked
+}
+
+build() {
+  cd "${srcdir}/${pkgname}"
+  export RUSTFLAGS="${RUSTFLAGS:--C target-cpu=native}"
+  cargo build --release --locked --bin keypop
+}
+
+check() {
+  cd "${srcdir}/${pkgname}"
+  cargo test --release --locked --bin keypop
+}
+
+package() {
+  cd "${srcdir}/${pkgname}"
+  install -Dm755 "target/release/keypop" \
+    "${pkgdir}/usr/bin/keypop"
+  install -Dm644 LICENSE \
+    "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+  install -Dm644 README.md \
+    "${pkgdir}/usr/share/doc/${pkgname}/README.md"
+}
