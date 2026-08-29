@@ -18,6 +18,5 @@ opencode-gemini-auth
 hw-probe
 elyprismlauncher-bin
 millennium-bin
-universal-android-debloater-bin
 bibata-cursor-theme-bin
 local:keypop
