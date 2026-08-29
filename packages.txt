@@ -20,3 +20,4 @@ elyprismlauncher-bin
 millennium-bin
 universal-android-debloater-bin
 bibata-cursor-theme-bin
+keypop-git
