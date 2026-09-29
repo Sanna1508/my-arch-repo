@@ -13,7 +13,7 @@ pwvucontrol
 teamviewer
 waydroid-helper
 somewm-git
-equicord-openasar
+local:equicord-openasar
 opencode-gemini-auth
 hw-probe
 elyprismlauncher-bin
