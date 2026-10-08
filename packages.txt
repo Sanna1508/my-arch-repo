@@ -21,3 +21,4 @@ millennium-bin
 bibata-cursor-theme-bin
 anpan-git
 local:keypop
+zapret2
