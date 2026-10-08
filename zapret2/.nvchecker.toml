@@ -1,4 +1,0 @@
-[zapret2]
-source = "git"
-git = "https://github.com/bol-van/zapret2.git"
-prefix = "v"
