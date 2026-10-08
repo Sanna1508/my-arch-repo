@@ -22,3 +22,4 @@ bibata-cursor-theme-bin
 anpan-git
 local:keypop
 cachydpi
+proton-vpn-qt-app
