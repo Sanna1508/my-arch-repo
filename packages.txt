@@ -23,3 +23,4 @@ anpan-git
 local:keypop
 cachydpi
 proton-vpn-qt-app
+local:ghostline
