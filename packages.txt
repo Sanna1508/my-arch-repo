@@ -25,3 +25,4 @@ cachydpi
 proton-vpn-qt-app
 local:ghostline
 bottles
+somewm-git
