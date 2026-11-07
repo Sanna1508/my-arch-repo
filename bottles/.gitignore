@@ -1,8 +1,0 @@
-# Arch packages
-*.tar.zst
-
-# Bottles source code
-*.tar.gz
-
-# Packages build logs
-*.log
