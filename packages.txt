@@ -14,3 +14,4 @@ local:keypop
 local:ghostline
 somewm-git
 awesome-git
+local:cairo-xml

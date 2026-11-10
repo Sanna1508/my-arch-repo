@@ -1,0 +1,18 @@
+diff --git a/test/pdiff/pdiff.h b/test/pdiff/pdiff.h
+index 30fec06cf..67addc700 100644
+--- a/test/pdiff/pdiff.h
++++ b/test/pdiff/pdiff.h
+@@ -18,8 +18,13 @@
+ #define _PDIFF_H
+ 
+ #include <cairo.h>
++#include <stdbool.h>
+ 
++#if !defined(__STDC_VERSION__) || __STDC_VERSION__ < 202311L
++# ifndef bool
+ typedef int bool;
++# endif
++#endif
+ #ifndef true
+ #define true 1
+ #endif
