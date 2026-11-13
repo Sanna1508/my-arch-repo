@@ -15,3 +15,5 @@ local:ghostline
 somewm-git
 awesome-git
 local:cairo-xml
+darkly
+serein-bin
