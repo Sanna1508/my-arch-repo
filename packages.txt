@@ -10,7 +10,6 @@ hw-probe
 elyprismlauncher-bin
 millennium-bin
 bibata-cursor-theme-bin
-local:keypop
 local:ghostline
 somewm-git
 awesome-git
