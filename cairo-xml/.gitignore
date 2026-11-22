@@ -1,6 +1,0 @@
-cairo/
-pkg/
-src/
-*.pkg.tar.zst
-*.pkg.tar
-*.log
