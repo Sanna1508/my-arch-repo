@@ -69,8 +69,8 @@ jobs:
           id builder >/dev/null 2>&1 || useradd -m builder
           grep -q '^builder ALL=(ALL) NOPASSWD: ALL$' /etc/sudoers || echo "builder ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
-                    rustup default stable
-                    sudo -u builder rustup default stable
+          rustup default stable
+          sudo -u builder rustup default stable
 
       - name: Configure makepkg for x86-64-v3 optimization
         run: |
