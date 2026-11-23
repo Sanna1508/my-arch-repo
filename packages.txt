@@ -16,4 +16,4 @@ awesome-git
 local:cairo-xml
 darkly
 serein-bin
-maplemono-otf
+maple-mono-nf-cn-unhinted
