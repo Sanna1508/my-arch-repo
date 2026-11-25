@@ -17,4 +17,5 @@ darkly
 serein-bin
 maple-mono-nf-cn-unhinted
 xdg-desktop-portal-luminous
+fvs2
 bottles
