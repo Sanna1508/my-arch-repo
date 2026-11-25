@@ -5,7 +5,6 @@ catppuccin-whiskers-bin
 fcitx5-lotus-git
 localsend
 teamviewer
-local:equicord-openasar
 hw-probe
 elyprismlauncher-bin
 millennium-bin
@@ -17,3 +16,4 @@ local:cairo-xml
 darkly
 serein-bin
 maple-mono-nf-cn-unhinted
+xdg-desktop-portal-luminous
