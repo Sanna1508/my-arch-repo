@@ -17,5 +17,6 @@ darkly
 serein-bin
 maple-mono-nf-cn-unhinted
 xdg-desktop-portal-luminous
+xdg-desktop-portal-termfilechooser-hunkyburrito-git
 fvs2
 bottles
