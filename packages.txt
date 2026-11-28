@@ -12,6 +12,7 @@ bibata-cursor-theme-bin
 local:ghostline
 somewm-git
 lua-lgi-git
+fastcompmgr
 awesome-git
 local:cairo-xml
 darkly
